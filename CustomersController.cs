@@ -7,7 +7,7 @@ namespace WebApplication1;
 [Route("[controller]")]
 public class CustomersController : ODataController
 {   
-    public ActionResult Delete(string key)
+    public ActionResult Delete([FromRoute] string key)
     {
         return Ok();
     }
